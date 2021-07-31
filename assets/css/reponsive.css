@@ -124,12 +124,12 @@
 /* Mobile */
 @media (max-width:46.1875em){
     .c-6{
-        flex: 0 0 0 47%;
+        flex: 0 0  47%;
         max-width: 47%;
     }
 
     .c-12{
-        flex: 0 0 0 97%;
+        flex:  0 0 97%;
         max-width: 97%;
     }
 
@@ -227,6 +227,11 @@
 
     .homestay-page__forward{
         margin: 0;
+    }
+
+    .container-product {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
     }
 
 }
