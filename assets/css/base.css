@@ -193,11 +193,11 @@ html{
     font-size: 3rem;
 }
 
-
 .moda-body{
     position: absolute;
     top: 140px;
     right: 38px;
+    min-width: 400px;
 }
 
 .moda-body__content{
@@ -237,7 +237,7 @@ html{
 
 .form-group{
     position: relative;
-    width: 345px;
+    /* width: 345px; */
     margin-top: 36px;
 }
 
@@ -267,6 +267,7 @@ html{
   
   .form-group.invalid .form-message {
     color: #f33a58;
+    display: inline-block;
 }
 
 .form-message {
