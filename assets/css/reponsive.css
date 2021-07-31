@@ -190,12 +190,12 @@
     }
 
     .ovelay-conten__login{
-        margin-top: 800px;
+        margin-top: 780px !important;
         padding: 0 16px;
     }
 
     .ovelay-conten__registration{
-        margin-top: 900px;
+        margin-top: 880px !important;
         padding: 0 16px;
     }
 
