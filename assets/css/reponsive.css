@@ -4,11 +4,6 @@
         -webkit-tap-highlight-color: transparent;
     }
 
-    .m-4{
-        flex: 0 0 0 32%;
-        max-width: 32%;
-    }
-
     .app{
         padding: 0 12px;
     }
@@ -44,6 +39,7 @@
     .mobile-nav__top{
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .header-navbar{
@@ -74,6 +70,10 @@
         padding: 14px 6px;
     }
 
+    .pointer__lis--money::before{
+        display: none;
+    }
+
     .header--navbar__pointer{
         width: 70%;
         margin: 10px;
@@ -92,6 +92,16 @@
 
 /* tablet */
 @media (min-width:46.25em) and (max-width:63.9375em){
+    .m-4{
+        flex: 0 0 0 32%;
+        max-width: 32%;
+    }
+
+    .m-6{
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+
     .ovelay-conten{
         min-height: 1150px;
     }
@@ -103,6 +113,11 @@
 
     .content-item{
         margin-right: 50%;
+    }
+
+    .container-slider{
+        margin-bottom: 30px;
+        margin-top: 120px;
     }
 }
 
