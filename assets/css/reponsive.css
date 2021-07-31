@@ -177,7 +177,7 @@
 
     .moda-body{
         top: calc(var(--header-height) + var(--ovelay-welcome-height) - 20px);
-        right: 0px;
+        right: 6px;
         left: 8px;
     }
 
