@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8205 homestay nổi bật tại Luxstay</title>
+    <link rel="icon" href="data:image/png;base64,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" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/Fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../assets/Fonts/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/Fonts/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="../assets/css/grid.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/reponsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <div class="header homestay-header">
+            <div class="grid wide">
+                <div class="row header-wap">
+                        <div class="header-logo">
+                            <a href="./index.html" aria-current="page" class="header-logo__link">
+                                <svg version="1.1" viewBox="0 0 50 50" class="svg-icon svg-fill" style="width: 50px; height: 50px;">
+                                    <path  pid="0" d="M25.093 0c13.781.06 24.94 11.317 24.882 25.106C49.917 38.894 38.663 50.058 24.88 50 11.1 49.942-.059 38.683.001 24.894.057 11.106 11.31-.058 25.092 0zm11.801 31.9L14.398 16.053c.241-.26.48-.518.74-.777 2.7-2.687 5.971-4.031 9.775-4.015 3.804.015 7.064 1.388 9.741 4.098.238.241.476.482.694.743l-5.951 4.133 2.381 1.688 5.153-3.576v.02L39.33 16.7c-.692-1.203-1.584-2.325-2.616-3.39-3.231-3.292-7.167-4.947-11.788-4.967-4.6-.019-8.53 1.603-11.809 4.867a17.806 17.806 0 00-2.682 3.408l1.429 1.004 23.429 16.51c-.24.26-.48.518-.74.777-2.7 2.687-5.971 4.011-9.775 3.996-3.803-.016-7.063-1.37-9.74-4.08-.258-.26-.496-.521-.734-.782l6.111-4.251-.139-.181-2.183-1.528-5.373 3.735v-.021l-2.377 1.65a17.824 17.824 0 002.654 3.43c3.253 3.291 7.169 4.946 11.769 4.965 4.62.021 8.549-1.602 11.83-4.866 1.06-1.075 1.96-2.21 2.682-3.406l-2.383-1.67z"></path>
+                                </svg>
+                            </a>
+                            
+                        </div>
+                        <div class="header-search">
+                            <i class="header-search-icon ti-search"></i>
+                            <div class="header-search__input--wap">
+                                <input type="text" class="header-search__input" placeholder="Tìm Kiếm">
+                                <!-- Search histoy  -->
+                                <div class="header-search--history">
+                                    <span class="header-search--history__heading">Tìm kiếm gần đây</span>
+                                    <div class="header-search--history__boby">
+                                        <i class="header-search--history__boby--location ti-location-pin"></i>
+                                        <div class="header-search--history__boby--info">
+                                            <span class="header-search--history__boby--info-name">Hồ Chí Minh</span>
+                                            <span class="header-search--history__boby--info-amount">1711 Chỗ ở</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="header-search__day">
+                                <i class="header-search__day--icon ti-calendar"></i>
+                                <p class="header-search__day--text">Ngày</p>
+                            </div>
+                            <div class="header-search__amount">
+                                <i class="header-search__amount--icon ti-user"></i>
+                                <a href="#" class="header-search__amount--text">Số khách</a>
+                                <div class="header-search__amount-people">
+                                    <ul class="amount-people__list">
+                                        <li class="amount-people__item">
+                                            <div class="amount-people__item--lever">
+                                                <p class="amount-people__item--lever--text">Người Lớn</p>
+                                                <p class="amount-people__item--lever--des"></p>
+                                            </div>
+                
+                                            <div class="amount-people__item--wap">
+                                                <i class="amount-people__item--icon-plus ti-minus"></i>
+                                                <input type="number" class="amount-people__item--amount" placeholder="0">
+                                                <i class="amount-people__item--icon-minus ti-plus"></i>
+                                            </div>
+                                        </li>
+                                        <li class="amount-people__item">
+                                            <div class="amount-people__item--lever">
+                                                <p class="amount-people__item--lever--text">Trẻ em</p>
+                                                <p class="amount-people__item--lever--des">2 - 12 tuổi</p>
+                                            </div>
+                
+                                            <div class="amount-people__item--wap">
+                                                <i class="amount-people__item--icon-plus ti-minus"></i>
+                                                <input type="number" class="amount-people__item--amount" placeholder="0">
+                                                <i class="amount-people__item--icon-minus ti-plus"></i>
+                                            </div>
+                                        </li>
+                                        <li class="amount-people__item">
+                                            <div class="amount-people__item--lever">
+                                                <p class="amount-people__item--lever--text">Trẻ sơ sinh</p>
+                                                <p class="amount-people__item--lever--des">Dưới 2 tuổi</p>
+                                            </div>
+                
+                                            <div class="amount-people__item--wap">
+                                                <i class="amount-people__item--icon-plus ti-minus"></i>
+                                                <input type="number" class="amount-people__item--amount" placeholder="0">
+                                                <i class="amount-people__item--icon-minus ti-plus"></i>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="amount-people__confirm">
+                                        <a href="" class="amount-people__confirm-delete">Xóa</a>
+                                        <a href="" class="amount-people__confirm-appky">Áp dụng</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="" class="header-search__start">
+                            <i class="header-search__start--icon ti-search"></i>
+                            </a>
+            
+                        </div>
+
+                        <!-- bar Mobile -->
+                        <label for="mobile-bar" class="header-mobile__bar">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                        <input type="checkbox" name="" id="mobile-bar" class="mobile-input__checkbox">
+    
+    
+                        <div class="header-navbar">
+                            <div class="mobile-nav__top">
+                                <div class="mobile-nav__logo">
+                                    <a href="" class="mobile-nav__logo--link">
+                                        <svg version="1.1" viewBox="0 0 244 50">
+                                            <path pid="0" d="M25.093 0c13.781.06 24.94 11.317 24.882 25.106C49.917 38.894 38.663 50.058 24.88 50 11.1 49.942-.059 38.683.001 24.894.057 11.106 11.31-.058 25.092 0zm11.801 31.9L14.398 16.053c.241-.26.48-.518.74-.777 2.7-2.687 5.971-4.031 9.775-4.015 3.804.015 7.064 1.388 9.741 4.098.238.241.476.482.694.743l-5.951 4.133 2.381 1.688 5.153-3.576v.02L39.33 16.7c-.692-1.203-1.584-2.325-2.616-3.39-3.231-3.292-7.167-4.947-11.788-4.967-4.6-.019-8.53 1.603-11.809 4.867a17.806 17.806 0 00-2.682 3.408l1.429 1.004 23.429 16.51c-.24.26-.48.518-.74.777-2.7 2.687-5.971 4.011-9.775 3.996-3.803-.016-7.063-1.37-9.74-4.08-.258-.26-.496-.521-.734-.782l6.111-4.251-.139-.181-2.183-1.528-5.373 3.735v-.021l-2.377 1.65a17.824 17.824 0 002.654 3.43c3.253 3.291 7.169 4.946 11.769 4.965 4.62.021 8.549-1.602 11.83-4.866 1.06-1.075 1.96-2.21 2.682-3.406l-2.383-1.67zm45.839 2.652l-12.45-.05.096-21.789a.957.957 0 00-.965-.945l-.678-.003a.96.96 0 00-.974.939v.047c-.048.095-.05.236-.05.33l-.098 22.636a1.337 1.337 0 001.351 1.326l13.805.056a.958.958 0 00.973-.938l.003-.662a1.037 1.037 0 00-1.013-.946v-.001zm27.64-22.67l-.871-.003c-.563-.003-1.027.42-1.027.937l-.075 15.878c-.014 3.157-3.252 5.735-7.197 5.72-3.943-.014-7.158-2.618-7.144-5.775l.123-15.5.052-.282a.957.957 0 00-.201-.756 1.128 1.128 0 00-.767-.332l-.87-.004c-.513-.002-.924.326-1.028.75a.857.857 0 00-.156.47l-.073 15.69c-.02 4.616 4.47 8.402 9.95 8.424 5.48.022 10.004-3.73 10.025-8.3l.122-15.5.054-.282a.952.952 0 00-.203-.755c-.152-.189-.458-.379-.714-.38zm48.638 11.226c-3.275-1.249-6.696-2.496-6.688-4.393.01-2.42 2.721-4.401 6.05-4.387 3.331.014 6.025 2.017 6.014 4.436l-.002.38a.96.96 0 00.961.953l.675.003a.96.96 0 00.971-.945v-.38c.009-1.66-.709-3.276-2.006-4.515-1.635-1.618-4.092-2.532-6.65-2.494-4.873-.02-8.698 3.047-8.715 6.938.03 3.748 4.416 5.38 8.656 6.962 3.324 1.247 6.795 2.495 6.785 4.487-.01 2.372-3.155 4.399-6.775 4.385-3.668-.016-6.747-2.07-6.737-4.44l.001-.38a.961.961 0 00-.96-.954l-.676-.002a.96.96 0 00-.97.945v.38c-.018 3.843 4.215 6.991 9.38 7.012 5.163.022 9.423-3.092 9.44-6.934-.033-3.796-4.464-5.427-8.754-7.057zM193.66 11.84l-18.844-.076c-.547-.003-.996.42-.999.94l-.002.66c-.002.52.443.946.99.949l8.103.032-.095 21.802c-.003.52.443.947.99.949l.696.002c.546.003.996-.42 1-.94l.095-21.802 8.055.031c.547.003.996-.42.999-.94l.003-.66c.003-.52-.443-.946-.99-.947zm49.264.515c-.144-.33-.481-.52-.867-.52l-.87-.005a.963.963 0 00-.677.28l-.145.14-.147.142-6.609 9.677-6.72-9.734c-.048-.046-.096-.094-.096-.14l-.143-.143a.97.97 0 00-.675-.285l-.774-.003a1.021 1.021 0 00-.872.515 1.03 1.03 0 00.045.988l7.966 11.576-.049 11.307c.006.527.437.95.964.946l.675.002a.957.957 0 00.97-.937l.049-11.308 7.923-11.509c.194-.329.243-.705.052-.989zm-37.898 12.047l3.75-7.994 3.728 8.023-7.478-.03zm15.615 10.954v-.047l-10.5-22.733c-.15-.425-.549-.71-1.102-.807-.603-.049-1.156.231-1.41.703v.046l-10.705 22.697v.047l-.204.471c-.095.283-.06.595.097.849.188.258.483.416.802.428l.854.004c.453.001.806-.282.958-.657l.05-.141 4.314-9.277 9.95.04 4.28 9.31.049.14c.15.38.5.664.952.667l.854.002c.352.002.654-.139.806-.422.152-.281.254-.563.104-.847l-.149-.473zm-86.008-15.15l.817.003a.963.963 0 00.729-.347l4.755-6.218.412-.478a.763.763 0 00.095-.915c-.135-.306-.453-.482-.816-.483l-.863-.004a.929.929 0 00-.868.608l-4.983 6.522a.94.94 0 00-.096.915c.135.22.453.394.816.397h.002zm-6.998 8.45l-.819-.002a.96.96 0 00-.728.347l-4.755 6.207-.413.48a.77.77 0 00-.094.92c.135.309.452.485.816.488l.864.002a.91.91 0 00.82-.478l5.03-6.601a.949.949 0 00.095-.92 1.027 1.027 0 00-.816-.443zm8.019-.453l.148.14 5.55 7.248c.248.284.246.662.095.99-.15.332-.5.519-.9.517l-.896-.004a1.013 1.013 0 01-.697-.286l-.149-.14c-.03-.002-.042-.02-.059-.044a.212.212 0 00-.04-.052l-5.501-7.151a1.005 1.005 0 01-.15-.237l-11.694-15.39-.446-.521c-.248-.285-.246-.662-.096-.993.15-.33.501-.518.9-.516l.897.004a.99.99 0 01.845.428l.15.19 11.992 15.721s.05.048.05.096z"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <label for="mobile-bar" class="mobile-bar__close">
+                                    <i class="fas fa-times"></i>
+                                </label>
+                            </div>
+                            <ul class="header-navbar__list">
+                                <li class="header-navbar__item">
+                                    <a href="" class="header-navbar__item--link header-navbar__item--link-ative">Host</a>
+                                </li>
+                                <li class="header-navbar__item">
+                                    <a href="./registration.html" class="header-navbar__item--link">Đăng Kí</a>
+                                </li>
+                                <li class="header-navbar__item">
+                                    <a href="./login.html" class="header-navbar__item--link">Đăng Nhập</a>
+                                </li>
+                            </ul>
+                            <div class="header--navbar__pointer">
+                                <img src="https://www.luxstay.com/icons/vi.svg" alt="" class="header--navbar__pointer--img">
+                                <span class="header--navbar__pointer--text">VND</span>
+                                <i class="header--navbar__pointer--icon ti-angle-down"></i>
+                                <div class="pointer">
+                                    <ul class="pointer__lis--language">
+                                        <li class="pointer__item--language">
+                                            <img src="/assets/img/pointer/VN.svg" alt="" class="pointer__lis--language--img">
+                                            Tiếng Việt
+                                            <i class="pointer__lis--language--check ti-check"></i>
+                                        </li>
+                                        <li class="pointer__item--language">
+                                            <img src="/assets/img/pointer/EN.svg" alt="" class="pointer__lis--language--img">
+                                            English
+                                        </li>
+                                        <li class="pointer__item--language">
+                                            <img src="/assets/img/pointer/KO.svg" alt="" class="pointer__lis--language--img">
+                                            Korea
+                                        </li>
+                                    </ul>
+                                    <ul class="pointer__lis--money">
+                                        <li class="pointer__item--money">
+                                            <span class="pointer__item--money--unit">VND</span>
+                                            <span class="pointer__item--money--name">Việt Nam Đồng</span>
+                                            <i class="pointer__item--money--icon ti-check"></i>
+                                        </li>
+                                        <li class="pointer__item--money">
+                                            <span class="pointer__item--money--unit ">USD</span>
+                                            <span class="pointer__item--money--name">United States Dollar</span>
+                                        </li>
+                                        <li class="pointer__item--money">
+                                            <span class="pointer__item--money--unit">KRW</span>
+                                            <span class="pointer__item--money--name">Won</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="grid wide">
+                <div class="row search-filter">
+                    <button class="search-filter__cancel--btn btn">Hủy phòng linh hoạt</button>
+                    <button class="search-filter__book--btn btn">Đặt phòng nhanh</button>
+                    <button class="search-filter__discount--btn btn">Giá ưu đãi</button>
+                    <button class="search-filter__kind--btn btn">
+                        Loại phòng
+                        <div class="filter-kind">
+                            <ul class="filter-kind__list">
+                                <li class="filter-kind__item">
+                                    <input type="checkbox" class="filter-kind__item--input">
+                                    <span title="Không gian lưu trú nơi các vị khách được sinh hoạt trong những ngôi nhà dân theo phong cách sống bản địa." class="filter-kind__item--text">Homestay</span>
+                                </li>
+                                <li class="filter-kind__item">
+                                    <input type="checkbox" class="filter-kind__item--input">
+                                    <span title="Không gian lưu trú nơi các vị khách được sinh hoạt trong những ngôi nhà dân theo phong cách sống bản địa." class="filter-kind__item--text">Nhà riêng</span>
+                                </li>
+                                <li class="filter-kind__item">
+                                    <input type="checkbox" class="filter-kind__item--input">
+                                    <span title="Loại chỗ ở có diện tích lớn, sang trọng, có khuôn viên bao quanh và chủ yếu phục vụ nhu cầu nghỉ dưỡng." class="filter-kind__item--text">Biệt thự</span>
+                                </li>
+                                <li class="filter-kind__item">
+                                    <input type="checkbox" class="filter-kind__item--input">
+                                    <span title="Căn hộ khép kín, cùng tập trung trên một mặt sàn trong một tòa nhà lớn." class="filter-kind__item--text">Chung cư</span>
+                                </li>
+                                <li class="filter-kind__item">
+                                    <input type="checkbox" class="filter-kind__item--input">
+                                    <span title="Căn hộ nhỏ kết hợp phòng khách, phòng ngủ và phòng bếp trong cùng một không gian." class="filter-kind__item--text">Studio</span>
+                                </li>
+                                <li class="filter-kind__item">
+                                    <input type="checkbox" class="filter-kind__item--input">
+                                    <span title="Căn hộ đầy đủ nội thất, tiện nghi; chủ yếu phục vụ khách lưu trú dài hạn và cung cấp các dịch vụ giống như một khách sạn thu nhỏ." class="filter-kind__item--text">Căn hộ dịch vụ</span>
+                                </li>
+                                <li class="filter-kind__item">
+                                    <input type="checkbox" class="filter-kind__item--input">
+                                    <span title="" class="filter-kind__item--text">Nhà tập thể</span>
+                                </li>
+                                <li class="filter-kind__item">
+                                    <input type="checkbox" class="filter-kind__item--input">
+                                    <span title="" class="filter-kind__item--text">Farmstay</span>
+                                </li>
+                                <li class="filter-kind__item">
+                                    <input type="checkbox" class="filter-kind__item--input">
+                                    <span title="" class="filter-kind__item--text">Nhà sàn</span>
+                                </li>
+                                <li class="filter-kind__item">
+                                    <input type="checkbox" class="filter-kind__item--input">
+                                    <span title="" class="filter-kind__item--text">Khách sạn căn hộ</span>
+                                </li>
+                                <li class="filter-kind__item">
+                                    <input type="checkbox" class="filter-kind__item--input">
+                                    <span title="" class="filter-kind__item--text">Căn hộ Duplex</span>
+                                </li>
+                                <li class="filter-kind__item">
+                                    <input type="checkbox" class="filter-kind__item--input">
+                                    <span title="" class="filter-kind__item--text">Căn hộ PenHouse</span>
+                                </li>
+                                <li class="filter-kind__item">
+                                    <input type="checkbox" class="filter-kind__item--input">
+                                    <span title="" class="filter-kind__item--text">Biệt thự trên không</span>
+                                </li>
+                                <li class="filter-kind__item">
+                                    <input type="checkbox" class="filter-kind__item--input">
+                                    <span title="" class="filter-kind__item--text">Khu nghỉ dưỡng</span>
+                                </li>
+                                <li class="filter-kind__item">
+                                    <input type="checkbox" class="filter-kind__item--input">
+                                    <span title="" class="filter-kind__item--text">Hotel</span>
+                                </li>
+                                <li class="filter-kind__item">
+                                    <input type="checkbox" class="filter-kind__item--input">
+                                    <span title="" class="filter-kind__item--text">Nhà nghỉ</span>
+                                </li>
+                                <li class="filter-kind__item">
+                                    <input type="checkbox" class="filter-kind__item--input">
+                                    <span title="" class="filter-kind__item--text">Nhà trọ</span>
+                                </li>
+                                <li class="filter-kind__item">
+                                    <input type="checkbox" class="filter-kind__item--input">
+                                    <span title="" class="filter-kind__item--text">Khách sạn con nhộng</span>
+                                </li>
+                                <li class="filter-kind__item">
+                                    <input type="checkbox" class="filter-kind__item--input">
+                                    <span title="" class="filter-kind__item--text">Khách sạn nổi</span>
+                                </li>
+                                <li class="filter-kind__item">
+                                    <input type="checkbox" class="filter-kind__item--input">
+                                    <span title="" class="filter-kind__item--text">Container</span>
+                                </li>
+                                <li class="filter-kind__item">
+                                    <input type="checkbox" class="filter-kind__item--input">
+                                    <span title="" class="filter-kind__item--text">Nhà cây</span>
+                                </li>
+                                <li class="filter-kind__item">
+                                    <input type="checkbox" class="filter-kind__item--input">
+                                    <span title="" class="filter-kind__item--text">Gác Mái</span>
+                                </li>
+                                <li class="filter-kind__item">
+                                    <input type="checkbox" class="filter-kind__item--input">
+                                    <span title="" class="filter-kind__item--text">Nhà gỗ</span>
+                                </li>
+                                <li class="filter-kind__item">
+                                    <input type="checkbox" class="filter-kind__item--input">
+                                    <span title="" class="filter-kind__item--text">Hanok</span>
+                                </li>
+                                <li class="filter-kind__item">
+                                    <input type="checkbox" class="filter-kind__item--input">
+                                    <span title="" class="filter-kind__item--text">Du thuyền</span>
+                                </li>
+                            </ul>
+                            <div class="filter-kind__confirm">
+                                <span class="filter-kind__confirm--cancel">Xóa</span>
+                                <a href="#" class="filter-kind__confirm--ative btn">Áp dụng</a>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="search-filter__price--btn btn">Giá chỗ ở </button>
+                    <button class="search-filter__add--btn btn">Thêm bộ lọc</button>
+                </div>
+                <div class="container-noted">
+                    <span class="container-noted__before">Trước khi đặt phòng, hãy kiểm tra những địa điểm bị hạn chế du lịch trong thời gian này. </span>
+                    <span class="container-after">Sức khỏe và sự an toàn của cộng đồng luôn được đặt hàng đầu. Vì vậy, vui lòng làm theo chỉ thị của chính phủ bởi điều đó thực sự cần thiết.</span>
+                </div>
+                <div class="container-place">
+                    <div class="place__text">
+                        <h4 class="place__heading">Lựa chọn những homestay hoàn hảo tại các điểm đến được yêu thích nhất</h4>
+                    </div>
+                    <div class="row container-place__list">
+                        <a href="" class="col l-2-4 m-4 c-6">
+                            <div class="container-place__conten">
+                                <img src="/assets/img/place/HaNoi.png" alt="" class="container-place__img">
+                                <div class="container-place__body">
+                                    <h3 class="container-place__body--name">Hà Nội</h3>
+                                    <span class="container-place__body--number">2925 chỗ ở</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="col l-2-4 m-4 c-6">
+                            <div class="container-place__conten">
+                                <img src="/assets/img/place/TP.HCM.png" alt="" class="container-place__img">
+                                <div class="container-place__body">
+                                    <h3 class="container-place__body--name">TP.Hồ Chí Minh</h3>
+                                    <span class="container-place__body--number">2925 chỗ ở</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="col l-2-4 m-4 c-6">
+                            <div class="container-place__conten">
+                                <img src="/assets/img/place/Vung Tau.png" alt="" class="container-place__img">
+                                <div class="container-place__body">
+                                    <h3 class="container-place__body--name">Vũng Tàu</h3>
+                                    <span class="container-place__body--number">2925 chỗ ở</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="col l-2-4 m-4 c-6">
+                            <div class="container-place__conten">
+                                <img src="/assets/img/place/Da Lat.png" alt="" class="container-place__img">
+                                <div class="container-place__body">
+                                    <h3 class="container-place__body--name">Đà Nẵng</h3>
+                                    <span class="container-place__body--number">2925 chỗ ở</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="col l-2-4 m-4 c-6">
+                            <div class="container-place__conten">
+                            <img src="/assets/img/place/Da Nang.png" alt="" class="container-place__img">
+                                <div class="container-place__body">
+                                    <h3 class="container-place__body--name">Đà Nẵng</h3>
+                                    <span class="container-place__body--number">2925 chỗ ở</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="homestay">
+                    <div class="homestay-header row">
+                        <h2 class="homestay-header__text">8021 Homestay nổi bật lại Luxstay</h2>
+                        <div class="homestay-header__sort">
+                            <input readonly="readonly" autocomplete="off" type="text" placeholder="Lựa chọn" class="sort__input">
+                            <ul class="sort__list">
+                                <li class="sort__item">
+                                    <a href="" class="sort__item__link">Giá tăng dần</a>
+                                </li>
+                                <li class="sort__item">
+                                    <a href="" class="sort__item__link">Giá giảm dần</a>
+                                </li>
+                            </ul>
+                            <i class="sort__icon ti-angle-down"></i>
+                            <span class="sort__text">Sắp xếp :</span>
+                        </div>
+                    </div>
+                    <div class="container-products row">
+                        <div class="col l-2-4 m-4 c-6 container-product">
+                            <div class="product__img--wap">
+                                <img src="../assets/img/product/product 1.jpg" alt="" class="product--img">
+                            </div>
+                            <div class="product-body">
+                                <div class="product-body__header">
+                                    <p class="product-body__header--space">Studio - 1 phòng ngủ</p>
+                                    <span class="product-body__header--star">
+                                        <i class="product-body__header--star-icon fas fa-star"></i>
+                                        4.58
+                                        <span class="product-body__header--amount">(27)</span>
+                                    </span>
+                                </div>
+                                <div class="product-body__conten">
+                                    <span class="product-body__conten--icon">
+                                        <svg data-v-ebd93bc0="" version="1.1" viewBox="0 0 20 20" class="is-instant-book mr--6 svg-icon svg-fill" style="width: 20px; height: 20px;"><title>Đặt phòng ngay, không cần đợi chủ nhà phê duyệt</title><defs><linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="svgicon_instant_book_a"><stop stop-color="#F68A39" offset="0%"></stop><stop stop-color="#F65E39" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><circle pid="0" fill="url(#svgicon_instant_book_a)" cx="10" cy="10" r="10"></circle><path pid="1" d="M10.42 15.158l3.037-6.073A.75.75 0 0012.787 8H10V5.177a.75.75 0 00-1.42-.335l-3.037 6.073A.75.75 0 006.213 12H9v2.823a.75.75 0 001.42.335z" fill="#FFF"></path></g></svg>
+                                    </span>
+                                    <h3 class="product-body__conten--name">A Cosy Apartment in @Vinhomes Greenbay @1 bedroom Ha Noi</h3>
+                                </div>
+                                <span class="product-body__price">$22.32/đêm</span>
+                            </div>
+                            <span class="product-sale">-10% Hôm nay</span>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6 container-product">
+                            <div class="product__img--wap">
+                                <img src="../assets/img/product/product 2.jpg" alt="" class="product--img">
+                            </div>
+                            <div class="product-body">
+                                <div class="product-body__header">
+                                    <p class="product-body__header--space">Căn hộ dịch vụ - 1 phòng ngủ</p>
+                                    <span class="product-body__header--star">
+                                        <i class="product-body__header--star-icon fas fa-star"></i>
+                                        4.58
+                                        <span class="product-body__header--amount">(27)</span>
+                                    </span>
+                                </div>
+                                <div class="product-body__conten">
+                                    <span class="product-body__conten--icon">
+                                        <svg data-v-ebd93bc0="" version="1.1" viewBox="0 0 20 20" class="is-instant-book mr--6 svg-icon svg-fill" style="width: 20px; height: 20px;"><title>Đặt phòng ngay, không cần đợi chủ nhà phê duyệt</title><defs><linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="svgicon_instant_book_a"><stop stop-color="#F68A39" offset="0%"></stop><stop stop-color="#F65E39" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><circle pid="0" fill="url(#svgicon_instant_book_a)" cx="10" cy="10" r="10"></circle><path pid="1" d="M10.42 15.158l3.037-6.073A.75.75 0 0012.787 8H10V5.177a.75.75 0 00-1.42-.335l-3.037 6.073A.75.75 0 006.213 12H9v2.823a.75.75 0 001.42.335z" fill="#FFF"></path></g></svg>
+                                    </span>
+                                    <h3 class="product-body__conten--name">Gia Hạ House_Room2.2_Có View RỘNG, ĐẸP hướng NÚI ĐỒI
+                                    </h3>
+                                </div>
+                                <span class="product-body__price">$33.44/đêm</span>
+                            </div>
+                            <span class="product-sale">-10% Hôm nay</span>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6 container-product">
+                            <div class="product__img--wap">
+                                <img src="../assets/img/product/product 3.jpg" alt="" class="product--img">
+                            </div>
+                            <div class="product-body">
+                                <div class="product-body__header">
+                                    <p class="product-body__header--space">Studio - 1 phòng ngủ</p>
+                                    <span class="product-body__header--star">
+                                        <i class="product-body__header--star-icon fas fa-star"></i>
+                                        4.58
+                                        <span class="product-body__header--amount">(27)</span>
+                                    </span>
+                                </div>
+                                <div class="product-body__conten">
+                                    <span class="product-body__conten--icon">
+                                        <svg data-v-ebd93bc0="" version="1.1" viewBox="0 0 20 20" class="is-instant-book mr--6 svg-icon svg-fill" style="width: 20px; height: 20px;"><title>Đặt phòng ngay, không cần đợi chủ nhà phê duyệt</title><defs><linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="svgicon_instant_book_a"><stop stop-color="#F68A39" offset="0%"></stop><stop stop-color="#F65E39" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><circle pid="0" fill="url(#svgicon_instant_book_a)" cx="10" cy="10" r="10"></circle><path pid="1" d="M10.42 15.158l3.037-6.073A.75.75 0 0012.787 8H10V5.177a.75.75 0 00-1.42-.335l-3.037 6.073A.75.75 0 006.213 12H9v2.823a.75.75 0 001.42.335z" fill="#FFF"></path></g></svg>
+                                    </span>
+                                    <h3 class="product-body__conten--name">A.502 STANDARD ROOM WITH TWIN BEDS</h3>
+                                </div>
+                                <span class="product-body__price">$18.49/đêm</span>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6 container-product">
+                            <div class="product__img--wap">
+                                <img src="../assets/img/product/product 4.jpg" alt="" class="product--img">
+                            </div>
+                            <div class="product-body">
+                                <div class="product-body__header">
+                                    <p class="product-body__header--space">Studio - 1 phòng ngủ</p>
+                                    <span class="product-body__header--star">
+                                        <i class="product-body__header--star-icon fas fa-star"></i>
+                                        4.58
+                                        <span class="product-body__header--amount">(27)</span>
+                                    </span>
+                                </div>
+                                <div class="product-body__conten">
+                                    <span class="product-body__conten--icon">
+                                        <svg data-v-ebd93bc0="" version="1.1" viewBox="0 0 20 20" class="is-instant-book mr--6 svg-icon svg-fill" style="width: 20px; height: 20px;"><title>Đặt phòng ngay, không cần đợi chủ nhà phê duyệt</title><defs><linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="svgicon_instant_book_a"><stop stop-color="#F68A39" offset="0%"></stop><stop stop-color="#F65E39" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><circle pid="0" fill="url(#svgicon_instant_book_a)" cx="10" cy="10" r="10"></circle><path pid="1" d="M10.42 15.158l3.037-6.073A.75.75 0 0012.787 8H10V5.177a.75.75 0 00-1.42-.335l-3.037 6.073A.75.75 0 006.213 12H9v2.823a.75.75 0 001.42.335z" fill="#FFF"></path></g></svg>
+                                    </span>
+                                    <h3 class="product-body__conten--name">A.501 DELUXE ROOM WITH BALCONY</h3>
+                                </div>
+                                <span class="product-body__price">$22.32/đêm</span>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6 container-product">
+                            <div class="product__img--wap">
+                                <img src="../assets/img/product/product 5.jpg" alt="" class="product--img">
+                            </div>
+                            <div class="product-body">
+                                <div class="product-body__header">
+                                    <p class="product-body__header--space">Studio - 1 phòng ngủ</p>
+                                    <span class="product-body__header--star">
+                                        <i class="product-body__header--star-icon fas fa-star"></i>
+                                        4.58
+                                        <span class="product-body__header--amount">(27)</span>
+                                    </span>
+                                </div>
+                                <div class="product-body__conten">
+                                    <span class="product-body__conten--icon">
+                                        <svg data-v-ebd93bc0="" version="1.1" viewBox="0 0 20 20" class="is-instant-book mr--6 svg-icon svg-fill" style="width: 20px; height: 20px;"><title>Đặt phòng ngay, không cần đợi chủ nhà phê duyệt</title><defs><linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="svgicon_instant_book_a"><stop stop-color="#F68A39" offset="0%"></stop><stop stop-color="#F65E39" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><circle pid="0" fill="url(#svgicon_instant_book_a)" cx="10" cy="10" r="10"></circle><path pid="1" d="M10.42 15.158l3.037-6.073A.75.75 0 0012.787 8H10V5.177a.75.75 0 00-1.42-.335l-3.037 6.073A.75.75 0 006.213 12H9v2.823a.75.75 0 001.42.335z" fill="#FFF"></path></g></svg>
+                                    </span>
+                                    <h3 title="A.501 DELUXE ROOM WITH BALCONY" class="product-body__conten--name">A.501 DELUXE ROOM WITH BALCONY</h3>
+                                </div>
+                                <span class="product-body__price">$22.32/đêm</span>
+                            </div>
+                            <span class="product-sale">-10% Hôm nay</span>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6 container-product">
+                            <div class="product__img--wap">
+                                <img src="../assets/img/product/product 6.jpg" alt="" class="product--img">
+                            </div>
+                            <div class="product-body">
+                                <div class="product-body__header">
+                                    <p class="product-body__header--space">Căn hộ dịch vụ - 1 phòng ngủ</p>
+                                    <span class="product-body__header--star">
+                                        <i class="product-body__header--star-icon fas fa-star"></i>
+                                        4.58
+                                        <span class="product-body__header--amount">(27)</span>
+                                    </span>
+                                </div>
+                                <div class="product-body__conten">
+                                    <span class="product-body__conten--icon">
+                                        <svg data-v-ebd93bc0="" version="1.1" viewBox="0 0 20 20" class="is-instant-book mr--6 svg-icon svg-fill" style="width: 20px; height: 20px;"><title>Đặt phòng ngay, không cần đợi chủ nhà phê duyệt</title><defs><linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="svgicon_instant_book_a"><stop stop-color="#F68A39" offset="0%"></stop><stop stop-color="#F65E39" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><circle pid="0" fill="url(#svgicon_instant_book_a)" cx="10" cy="10" r="10"></circle><path pid="1" d="M10.42 15.158l3.037-6.073A.75.75 0 0012.787 8H10V5.177a.75.75 0 00-1.42-.335l-3.037 6.073A.75.75 0 006.213 12H9v2.823a.75.75 0 001.42.335z" fill="#FFF"></path></g></svg>
+                                    </span>
+                                    <h3 title="Saison de Dalat - Căn hộ gia đình Printemps" class="product-body__conten--name">Saison de Dalat - Căn hộ gia đình Printemps</h3>
+                                </div>
+                                <span class="product-body__price">$22.32/đêm</span>
+                            </div>
+                            <span class="product-sale">-10% Hôm nay</span>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6 container-product">
+                            <div class="product__img--wap">
+                                <img src="../assets/img/product/product 7.jpg" alt="" class="product--img">
+                            </div>
+                            <div class="product-body">
+                                <div class="product-body__header">
+                                    <p class="product-body__header--space">Biệt thự - 6 phòng ngủ</p>
+                                    <span class="product-body__header--star">
+                                        <i class="product-body__header--star-icon fas fa-star"></i>
+                                        4.58
+                                        <span class="product-body__header--amount">(27)</span>
+                                    </span>
+                                </div>
+                                <div class="product-body__conten">
+                                    <span class="product-body__conten--icon">
+                                        <svg data-v-ebd93bc0="" version="1.1" viewBox="0 0 20 20" class="is-instant-book mr--6 svg-icon svg-fill" style="width: 20px; height: 20px;"><title>Đặt phòng ngay, không cần đợi chủ nhà phê duyệt</title><defs><linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="svgicon_instant_book_a"><stop stop-color="#F68A39" offset="0%"></stop><stop stop-color="#F65E39" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><circle pid="0" fill="url(#svgicon_instant_book_a)" cx="10" cy="10" r="10"></circle><path pid="1" d="M10.42 15.158l3.037-6.073A.75.75 0 0012.787 8H10V5.177a.75.75 0 00-1.42-.335l-3.037 6.073A.75.75 0 006.213 12H9v2.823a.75.75 0 001.42.335z" fill="#FFF"></path></g></svg>
+                                    </span>
+                                    <h3 title="Villa Viet Home 1" class="product-body__conten--name">Villa Viet Home 1</h3>
+                                </div>
+                                <span class="product-body__price">$107.76/đêm</span>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6 container-product">
+                            <div class="product__img--wap">
+                                <img src="../assets/img/product/product 1.jpg" alt="" class="product--img">
+                            </div>
+                            <div class="product-body">
+                                <div class="product-body__header">
+                                    <p class="product-body__header--space">Studio - 1 phòng ngủ</p>
+                                    <span class="product-body__header--star">
+                                        <i class="product-body__header--star-icon fas fa-star"></i>
+                                        4.58
+                                        <span class="product-body__header--amount">(27)</span>
+                                    </span>
+                                </div>
+                                <div class="product-body__conten">
+                                    <span class="product-body__conten--icon">
+                                        <svg data-v-ebd93bc0="" version="1.1" viewBox="0 0 20 20" class="is-instant-book mr--6 svg-icon svg-fill" style="width: 20px; height: 20px;"><title>Đặt phòng ngay, không cần đợi chủ nhà phê duyệt</title><defs><linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="svgicon_instant_book_a"><stop stop-color="#F68A39" offset="0%"></stop><stop stop-color="#F65E39" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><circle pid="0" fill="url(#svgicon_instant_book_a)" cx="10" cy="10" r="10"></circle><path pid="1" d="M10.42 15.158l3.037-6.073A.75.75 0 0012.787 8H10V5.177a.75.75 0 00-1.42-.335l-3.037 6.073A.75.75 0 006.213 12H9v2.823a.75.75 0 001.42.335z" fill="#FFF"></path></g></svg>
+                                    </span>
+                                    <h3 class="product-body__conten--name">A Cosy Apartment in @Vinhomes Greenbay @1 bedroom Ha Noi</h3>
+                                </div>
+                                <span class="product-body__price">$22.32/đêm</span>
+                            </div>
+                            <span class="product-sale">-10% Hôm nay</span>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6 container-product">
+                            <div class="product__img--wap">
+                                <img src="../assets/img/product/product 2.jpg" alt="" class="product--img">
+                            </div>
+                            <div class="product-body">
+                                <div class="product-body__header">
+                                    <p class="product-body__header--space">Căn hộ dịch vụ - 1 phòng ngủ</p>
+                                    <span class="product-body__header--star">
+                                        <i class="product-body__header--star-icon fas fa-star"></i>
+                                        4.58
+                                        <span class="product-body__header--amount">(27)</span>
+                                    </span>
+                                </div>
+                                <div class="product-body__conten">
+                                    <span class="product-body__conten--icon">
+                                        <svg data-v-ebd93bc0="" version="1.1" viewBox="0 0 20 20" class="is-instant-book mr--6 svg-icon svg-fill" style="width: 20px; height: 20px;"><title>Đặt phòng ngay, không cần đợi chủ nhà phê duyệt</title><defs><linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="svgicon_instant_book_a"><stop stop-color="#F68A39" offset="0%"></stop><stop stop-color="#F65E39" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><circle pid="0" fill="url(#svgicon_instant_book_a)" cx="10" cy="10" r="10"></circle><path pid="1" d="M10.42 15.158l3.037-6.073A.75.75 0 0012.787 8H10V5.177a.75.75 0 00-1.42-.335l-3.037 6.073A.75.75 0 006.213 12H9v2.823a.75.75 0 001.42.335z" fill="#FFF"></path></g></svg>
+                                    </span>
+                                    <h3 class="product-body__conten--name">Gia Hạ House_Room2.2_Có View RỘNG, ĐẸP hướng NÚI ĐỒI
+                                    </h3>
+                                </div>
+                                <span class="product-body__price">$33.44/đêm</span>
+                            </div>
+                            <span class="product-sale">-10% Hôm nay</span>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6 container-product">
+                            <div class="product__img--wap">
+                                <img src="../assets/img/product/product 3.jpg" alt="" class="product--img">
+                            </div>
+                            <div class="product-body">
+                                <div class="product-body__header">
+                                    <p class="product-body__header--space">Studio - 1 phòng ngủ</p>
+                                    <span class="product-body__header--star">
+                                        <i class="product-body__header--star-icon fas fa-star"></i>
+                                        4.58
+                                        <span class="product-body__header--amount">(27)</span>
+                                    </span>
+                                </div>
+                                <div class="product-body__conten">
+                                    <span class="product-body__conten--icon">
+                                        <svg data-v-ebd93bc0="" version="1.1" viewBox="0 0 20 20" class="is-instant-book mr--6 svg-icon svg-fill" style="width: 20px; height: 20px;"><title>Đặt phòng ngay, không cần đợi chủ nhà phê duyệt</title><defs><linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="svgicon_instant_book_a"><stop stop-color="#F68A39" offset="0%"></stop><stop stop-color="#F65E39" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><circle pid="0" fill="url(#svgicon_instant_book_a)" cx="10" cy="10" r="10"></circle><path pid="1" d="M10.42 15.158l3.037-6.073A.75.75 0 0012.787 8H10V5.177a.75.75 0 00-1.42-.335l-3.037 6.073A.75.75 0 006.213 12H9v2.823a.75.75 0 001.42.335z" fill="#FFF"></path></g></svg>
+                                    </span>
+                                    <h3 class="product-body__conten--name">A.502 STANDARD ROOM WITH TWIN BEDS</h3>
+                                </div>
+                                <span class="product-body__price">$18.49/đêm</span>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6 container-product">
+                            <div class="product__img--wap">
+                                <img src="../assets/img/product/product 4.jpg" alt="" class="product--img">
+                            </div>
+                            <div class="product-body">
+                                <div class="product-body__header">
+                                    <p class="product-body__header--space">Studio - 1 phòng ngủ</p>
+                                    <span class="product-body__header--star">
+                                        <i class="product-body__header--star-icon fas fa-star"></i>
+                                        4.58
+                                        <span class="product-body__header--amount">(27)</span>
+                                    </span>
+                                </div>
+                                <div class="product-body__conten">
+                                    <span class="product-body__conten--icon">
+                                        <svg data-v-ebd93bc0="" version="1.1" viewBox="0 0 20 20" class="is-instant-book mr--6 svg-icon svg-fill" style="width: 20px; height: 20px;"><title>Đặt phòng ngay, không cần đợi chủ nhà phê duyệt</title><defs><linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="svgicon_instant_book_a"><stop stop-color="#F68A39" offset="0%"></stop><stop stop-color="#F65E39" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><circle pid="0" fill="url(#svgicon_instant_book_a)" cx="10" cy="10" r="10"></circle><path pid="1" d="M10.42 15.158l3.037-6.073A.75.75 0 0012.787 8H10V5.177a.75.75 0 00-1.42-.335l-3.037 6.073A.75.75 0 006.213 12H9v2.823a.75.75 0 001.42.335z" fill="#FFF"></path></g></svg>
+                                    </span>
+                                    <h3 class="product-body__conten--name">A.501 DELUXE ROOM WITH BALCONY</h3>
+                                </div>
+                                <span class="product-body__price">$22.32/đêm</span>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6 container-product">
+                            <div class="product__img--wap">
+                                <img src="../assets/img/product/product 5.jpg" alt="" class="product--img">
+                            </div>
+                            <div class="product-body">
+                                <div class="product-body__header">
+                                    <p class="product-body__header--space">Studio - 1 phòng ngủ</p>
+                                    <span class="product-body__header--star">
+                                        <i class="product-body__header--star-icon fas fa-star"></i>
+                                        4.58
+                                        <span class="product-body__header--amount">(27)</span>
+                                    </span>
+                                </div>
+                                <div class="product-body__conten">
+                                    <span class="product-body__conten--icon">
+                                        <svg data-v-ebd93bc0="" version="1.1" viewBox="0 0 20 20" class="is-instant-book mr--6 svg-icon svg-fill" style="width: 20px; height: 20px;"><title>Đặt phòng ngay, không cần đợi chủ nhà phê duyệt</title><defs><linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="svgicon_instant_book_a"><stop stop-color="#F68A39" offset="0%"></stop><stop stop-color="#F65E39" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><circle pid="0" fill="url(#svgicon_instant_book_a)" cx="10" cy="10" r="10"></circle><path pid="1" d="M10.42 15.158l3.037-6.073A.75.75 0 0012.787 8H10V5.177a.75.75 0 00-1.42-.335l-3.037 6.073A.75.75 0 006.213 12H9v2.823a.75.75 0 001.42.335z" fill="#FFF"></path></g></svg>
+                                    </span>
+                                    <h3 title="A.501 DELUXE ROOM WITH BALCONY" class="product-body__conten--name">A.501 DELUXE ROOM WITH BALCONY</h3>
+                                </div>
+                                <span class="product-body__price">$22.32/đêm</span>
+                            </div>
+                            <span class="product-sale">-10% Hôm nay</span>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6 container-product">
+                            <div class="product__img--wap">
+                                <img src="../assets/img/product/product 6.jpg" alt="" class="product--img">
+                            </div>
+                            <div class="product-body">
+                                <div class="product-body__header">
+                                    <p class="product-body__header--space">Căn hộ dịch vụ - 1 phòng ngủ</p>
+                                    <span class="product-body__header--star">
+                                        <i class="product-body__header--star-icon fas fa-star"></i>
+                                        4.58
+                                        <span class="product-body__header--amount">(27)</span>
+                                    </span>
+                                </div>
+                                <div class="product-body__conten">
+                                    <span class="product-body__conten--icon">
+                                        <svg data-v-ebd93bc0="" version="1.1" viewBox="0 0 20 20" class="is-instant-book mr--6 svg-icon svg-fill" style="width: 20px; height: 20px;"><title>Đặt phòng ngay, không cần đợi chủ nhà phê duyệt</title><defs><linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="svgicon_instant_book_a"><stop stop-color="#F68A39" offset="0%"></stop><stop stop-color="#F65E39" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><circle pid="0" fill="url(#svgicon_instant_book_a)" cx="10" cy="10" r="10"></circle><path pid="1" d="M10.42 15.158l3.037-6.073A.75.75 0 0012.787 8H10V5.177a.75.75 0 00-1.42-.335l-3.037 6.073A.75.75 0 006.213 12H9v2.823a.75.75 0 001.42.335z" fill="#FFF"></path></g></svg>
+                                    </span>
+                                    <h3 title="Saison de Dalat - Căn hộ gia đình Printemps" class="product-body__conten--name">Saison de Dalat - Căn hộ gia đình Printemps</h3>
+                                </div>
+                                <span class="product-body__price">$22.32/đêm</span>
+                            </div>
+                            <span class="product-sale">-10% Hôm nay</span>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6 container-product">
+                            <div class="product__img--wap">
+                                <img src="../assets/img/product/product 7.jpg" alt="" class="product--img">
+                            </div>
+                            <div class="product-body">
+                                <div class="product-body__header">
+                                    <p class="product-body__header--space">Biệt thự - 6 phòng ngủ</p>
+                                    <span class="product-body__header--star">
+                                        <i class="product-body__header--star-icon fas fa-star"></i>
+                                        4.58
+                                        <span class="product-body__header--amount">(27)</span>
+                                    </span>
+                                </div>
+                                <div class="product-body__conten">
+                                    <span class="product-body__conten--icon">
+                                        <svg data-v-ebd93bc0="" version="1.1" viewBox="0 0 20 20" class="is-instant-book mr--6 svg-icon svg-fill" style="width: 20px; height: 20px;"><title>Đặt phòng ngay, không cần đợi chủ nhà phê duyệt</title><defs><linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="svgicon_instant_book_a"><stop stop-color="#F68A39" offset="0%"></stop><stop stop-color="#F65E39" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><circle pid="0" fill="url(#svgicon_instant_book_a)" cx="10" cy="10" r="10"></circle><path pid="1" d="M10.42 15.158l3.037-6.073A.75.75 0 0012.787 8H10V5.177a.75.75 0 00-1.42-.335l-3.037 6.073A.75.75 0 006.213 12H9v2.823a.75.75 0 001.42.335z" fill="#FFF"></path></g></svg>
+                                    </span>
+                                    <h3 title="Villa Viet Home 1" class="product-body__conten--name">Villa Viet Home 1</h3>
+                                </div>
+                                <span class="product-body__price">$107.76/đêm</span>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6 container-product">
+                            <div class="product__img--wap">
+                                <img src="../assets/img/product/product 2.jpg" alt="" class="product--img">
+                            </div>
+                            <div class="product-body">
+                                <div class="product-body__header">
+                                    <p class="product-body__header--space">Căn hộ dịch vụ - 1 phòng ngủ</p>
+                                    <span class="product-body__header--star">
+                                        <i class="product-body__header--star-icon fas fa-star"></i>
+                                        4.58
+                                        <span class="product-body__header--amount">(27)</span>
+                                    </span>
+                                </div>
+                                <div class="product-body__conten">
+                                    <span class="product-body__conten--icon">
+                                        <svg data-v-ebd93bc0="" version="1.1" viewBox="0 0 20 20" class="is-instant-book mr--6 svg-icon svg-fill" style="width: 20px; height: 20px;"><title>Đặt phòng ngay, không cần đợi chủ nhà phê duyệt</title><defs><linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="svgicon_instant_book_a"><stop stop-color="#F68A39" offset="0%"></stop><stop stop-color="#F65E39" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><circle pid="0" fill="url(#svgicon_instant_book_a)" cx="10" cy="10" r="10"></circle><path pid="1" d="M10.42 15.158l3.037-6.073A.75.75 0 0012.787 8H10V5.177a.75.75 0 00-1.42-.335l-3.037 6.073A.75.75 0 006.213 12H9v2.823a.75.75 0 001.42.335z" fill="#FFF"></path></g></svg>
+                                    </span>
+                                    <h3 class="product-body__conten--name">Gia Hạ House_Room2.2_Có View RỘNG, ĐẸP hướng NÚI ĐỒI
+                                    </h3>
+                                </div>
+                                <span class="product-body__price">$33.44/đêm</span>
+                            </div>
+                            <span class="product-sale">-10% Hôm nay</span>
+                        </div>
+                    </div>
+                    <div class="homestay-page">
+                    <div class="homestay-page__list row">
+                            <span class="homestay-page__forward">
+                                <i class="homestay-page__icon fas fa-chevron-left"></i>
+                            </span>
+                            <span class="homestay-page__item">
+                                <a href="" class="homestay-page__item--link">1</a>
+                            </span>
+                            <span class="homestay-page__item">
+                                <a href="" class="homestay-page__item--link homestay-page__item--link-ative">2</a>
+                            </span>
+                            <span class="homestay-page__item">
+                                <a href="" class="homestay-page__item--link">3</a>
+                            </span>
+                            <span class="homestay-page__item">
+                                <a href="" class="homestay-page__item--link">4</a>
+                            </span>
+                            <span class="homestay-page__item">
+                                <a href="" class="homestay-page__item--link">5</a>
+                            </span>
+                            <span class="homestay-page__item">
+                                <a href="" class="homestay-page__item--link">6</a>
+                            </span>
+                            <span class="homestay-page__item">
+                                <a href="" class="homestay-page__item--link">7</a>
+                            </span>
+                            <span class="homestay-page__item--nopic">---</span>
+                            <span class="homestay-page__item">
+                                <a href="" class="homestay-page__item--link">410</a>
+                            </span>
+                            <span class="homestay-page__forward">
+                                <i class="homestay-page__icon fas fa-chevron-right"></i>
+                            </span>
+                        </div>
+                        <p class="homestay-page__text">1 - 20 trong số 8200 chỗ ở</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer">
+            <div class="grid wide">
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-bottom__text">
+                    © 2021 Luxstay. Bản quyền thuộc về Công ty TNHH Luxstay Việt Nam - MSDN: 0108308449. Mọi hành vi sao chép đều là phạm pháp nếu không có sự cho phép bằng văn bản của chúng tôi.
+                </p>
+                <p class="footer-bottom__text">
+                    Tầng 21 tòa nhà Capital Tower số 109 phố Trần Hưng Đạo, phường Cửa Nam, quận Hoàn Kiếm, Hà Nội. Email: info@luxstay.com, Số điện thoại: 18006586.
+                </p>
+                <p class="footer-bottom__text">
+                    Số Giấy chứng nhận đăng ký doanh nghiệp: 0108308449, ngày cấp: 06/06/2018, nơi cấp: Sở Kế hoạch và Đầu tư TP Hà Nội
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
