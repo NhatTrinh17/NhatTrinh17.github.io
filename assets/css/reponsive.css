@@ -92,7 +92,18 @@
 
 /* tablet */
 @media (min-width:46.25em) and (max-width:63.9375em){
+    .ovelay-conten{
+        min-height: 1150px;
+    }
 
+    .moda-body{
+        top: 212px;
+        right: 20px;
+    }
+
+    .content-item{
+        margin-right: 50%;
+    }
 }
 
 /* Mobile */
@@ -151,7 +162,7 @@
 
     .moda-body{
         top: calc(var(--header-height) + var(--ovelay-welcome-height) - 20px);
-        right: 2px;
+        right: 0px;
         left: 8px;
     }
 
@@ -163,17 +174,13 @@
         max-width: 75%;
     }
 
-    .auth-form__input--icon{
-        right: 100px;
-    }
-
     .ovelay-conten__login{
-        margin-top: 700px !important;
+        margin-top: 800px;
         padding: 0 16px;
     }
 
     .ovelay-conten__registration{
-        margin-top: 900px !important;
+        margin-top: 900px;
         padding: 0 16px;
     }
 
